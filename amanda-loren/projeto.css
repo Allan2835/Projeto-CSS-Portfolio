@@ -1,0 +1,115 @@
+
+.grid-heater {
+    grid-area: header;
+    text-align: center;
+    color: white;
+    /* background-color: rgb(232, 3, 3); */
+    font-family: Impact;
+}
+
+.grid-nav {
+    grid-area: navegacao;
+    text-align: center;
+    color: white;
+    /* background: linear-gradient(0, #120c56, #000000); */
+    /* background-color: rgb(195, 195, 195); */
+}
+
+.grid-Amanda {
+    grid-area: conteudo1;
+    text-align: center;
+    color: white;
+    /* background: linear-gradient(0, #120c56, #000000); */
+    /* background-color: rgb(195, 195, 195); */
+}
+
+.grid-Loren {
+    grid-area: conteudo2;
+    text-align: center;
+    color: white;
+    /* background: linear-gradient(0, #120c56, #000000); */
+    /* background-color: rgb(195, 195, 195); */
+}
+
+.grid-foto-amanda {
+    grid-area: foto1;
+    text-align: center;
+    color: white;
+    /* background: linear-gradient(0, #120c56, #000000); */
+    /* background-color: rgb(195, 195, 195); */
+}
+
+.grid-foto-loren {
+    grid-area: foto2;
+    text-align: center;
+    color: white;
+    /* background: linear-gradient(0, #120c56, #000000); */
+    /* background-color: rgb(195, 195, 195); */
+}
+
+.grid-rodape {
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    /* background: linear-gradient(0, #120c56, #000000); */
+    /* background-color: rgb(195, 195, 195); */
+ 
+}
+
+.grid-container {
+    display: grid;
+    gap: 0px;
+    column-gap: 2px;
+    /* background: linear-gradient(0, #120c56, #000000); */
+
+    /* background-color: rgb(255, 255, 255); */
+    grid-template-areas:
+        'header header header header'
+        'navegacao navegacao navegacao navegacao'
+        'conteudo1 conteudo1 conteudo2 conteudo2'
+        'foto1 foto1 foto2 foto2'
+        'footer footer footer footer';
+}
+
+.container{
+    width: auto;
+    height: 150px;
+    /* background: linear-gradient(0, #120c56, #000000); */
+  }
+body {
+    background: linear-gradient(0, #120c56, #000000);
+
+}
+
+.stars{
+    width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 50px 30px white,
+    500px 680px white,
+    100px 400px white,
+    450px 120px white,
+    400px 300px white,
+    300px 230px white,
+    700px 450px white,
+    600px 350px white,
+    400px 30px white,
+    250px 130px white,
+    200px 50px white,
+    120px 350px white,
+    150px 100px white,
+    30px 350px white;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
+
