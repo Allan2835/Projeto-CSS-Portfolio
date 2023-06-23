@@ -1,0 +1,39 @@
+html {
+  font-size: 1em;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+li {
+  list-style: none;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+}
+
+.index {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 150px;
+}
