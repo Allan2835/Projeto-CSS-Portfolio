@@ -1,0 +1,60 @@
+.container {
+    display: grid;
+    background-color: purple;
+    gap: 10px;
+    text-align: center;
+    grid-template-areas:
+
+        'titulo titulo titulo titulo'
+        'menu menu menu menu'
+    ;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+header {
+    grid-area: titulo;
+    justify-items: center;
+    background-color: rgb(69, 69, 203);
+    color: white;
+    text-align: center;
+    margin: 0%;
+}
+
+/* .titulo {
+    background-color: rgb(69, 69, 203);
+    color: white;
+    text-align: center;
+    margin: 0%;
+} */
+
+.um {
+    background-color: green;
+    grid-area: um;
+}
+
+.dois {
+
+    background-color: green;
+    grid-area: dois;
+
+}
+
+.tres {
+
+    background-color: green;
+    grid-area: tres;
+
+}
+
+.quatro {
+
+    background-color: green;
+    grid-area: quatro;
+
+}
