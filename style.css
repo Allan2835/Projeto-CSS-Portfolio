@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+background-color: dimgray;
+display: flex;
+justify-content: space-around;
+
+
+}
+header h1 {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+header .container-menu{
+    display:flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;  
+
+}
+
+/*.container-principal{
+    display: flex;
+    gap: 30px;
+    align-items:start;
+    padding: 20px;
+    grid-template-areas: imagem1 texto texto texto;
+    
+}*/
+
+#textao{
+    align-items:left;
+}
+
+.foto{
+    border-radius: 100%;
+}
