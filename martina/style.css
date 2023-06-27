@@ -1,5 +1,6 @@
 html {
   font-size: 1em;
+  margin: 5px;
 }
 
 @media (min-width: 1200px) {
@@ -13,6 +14,16 @@ img {
   height: 500px;
 }
 
+h2 {
+  font-family: 'Agdasima', sans-serif;
+  font-size: 3rem;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -22,9 +33,23 @@ ul {
   grid-template-columns: 150px 150px 150px 150px 150px;
   grid-template-rows: auto;
   justify-content: center;
+  justify-items: center;
 }
 li {
   list-style: none;
+}
+
+
+main {
+  margin: 5px;
+  display: grid;
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+  display: grid;
+  justify-content: center;
 }
 
 footer {
@@ -32,8 +57,3 @@ footer {
   justify-content: center;
 }
 
-.index {
-  display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: 150px;
-}
