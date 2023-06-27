@@ -1,6 +1,7 @@
 html {
   font-size: 1em;
   margin: 5px;
+  
 }
 
 @media (min-width: 1200px) {
@@ -64,5 +65,15 @@ footer {
   font-size: 1.50rem;
   display: flex;
   justify-content: center;
+}
+
+.container_pai {
+  background-color: red;
+  display: grid;
+  gap: 5px;
+  grid-template-areas: 
+  'item1 item1 item1 item1'
+  'item2 item2 item4 item4'
+  ;
 }
 
