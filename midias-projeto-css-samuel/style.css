@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.container-total{
+    background-color: black;
+    display: grid;
+    gap: 10px;
+    height: 100px;
+    grid-template-areas: 
+    'item1 item1 item1'
+    'item2 item2 item2'
+    'item3 item3 item3'; 
+}
+
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+li a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+.item{
+    background-color: rgb(86, 71, 38);
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+    background: rgb(67, 47, 22);
+}
+
+header h1 {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+header {
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menus{
+    display:flex;
+    gap: 30px;
+    align-items: right;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(33, 171, 81);
+    font-family: sans-serif; 
+}
+
+.itens{
+    
+    align-items: right;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(243, 248, 244);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    
+}
+
+.flex-main {
+    display: flex;
+    gap: 10px;
+
+}
+
+.flex-section {
+    display: flex;
+    gap: 10px;
+
+}
+
+.foto{
+    grid-area: foto;
+
+    width: 100vw;
+}
+
+.foto img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+
+footer {
+    height: 50px;
+    
+}
+
+#contato {
+    color: white;
+    text-align: center;
+}
