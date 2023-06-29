@@ -1,7 +1,7 @@
 .grid-heater {
     grid-area: header;
     text-align: center;
-    color: white;
+    color: rgb(237, 237, 237);
     font-family: Impact;
 }
 
