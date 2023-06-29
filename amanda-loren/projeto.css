@@ -35,6 +35,20 @@
     color: white;
 }
 
+.grid-Amanda3 {
+    grid-area: conteudo5;
+    text-align: center;
+    color: white;
+}
+
+.grid-Loren3 {
+    grid-area: conteudo6;
+    text-align: center;
+    color: white;
+    list-style-type: circle;
+    color: white;
+}
+
 .grid-foto-amanda {
     grid-area: foto1;
     height: 300px;
@@ -74,6 +88,7 @@
         'navegacao navegacao navegacao navegacao'
         'conteudo1 conteudo1 conteudo2 conteudo2'
         'conteudo3 conteudo3 conteudo4 conteudo4'
+        'conteudo5 conteudo5 conteudo6 conteudo6'
         'foto foto foto foto'
         'footer footer footer footer';
 }
@@ -86,6 +101,11 @@
 body {
     background: linear-gradient(0, #120c56, #000000);
 
+}
+
+.imginsta {
+    width: 50px;
+    height: 50px;
 }
 
 .stars {
@@ -206,10 +226,10 @@ li {
 
     width: 50px;
     height: 50px;
-    line-height: 53px;
+    line-height: 50px;
     display: block;
     text-decoration: none;
-    color: #505050;
+    color: #dd0404;
     transition: .4s;
 
 }
