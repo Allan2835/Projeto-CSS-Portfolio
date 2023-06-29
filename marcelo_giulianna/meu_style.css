@@ -7,14 +7,36 @@
 
         'titulo titulo titulo titulo'
         'menu menu menu menu'
+        'chiquinha chiquinha marcelo marcelo'
+        'trab trab trab2 trab2'
+        'projeto1 projeto1 projeto2 projeto2'
+        'footer footer footer footer'
     ;
+}
+
+.menu ol {
+    list-style-type: none;
+    
+}
+
+.menu ol li {
+    margin-top: 7px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid;
 }
 
 .menu {
     grid-area: menu;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: auto;
+
+}
+
+.menu:hover ol li .um {
+    font-size: 50px;
 }
 
 header {
@@ -26,17 +48,11 @@ header {
     margin: 0%;
 }
 
-/* .titulo {
-    background-color: rgb(69, 69, 203);
-    color: white;
-    text-align: center;
-    margin: 0%;
-} */
-
 .um {
     background-color: green;
     grid-area: um;
 }
+
 
 .dois {
 
@@ -56,5 +72,39 @@ header {
 
     background-color: green;
     grid-area: quatro;
+}
 
+.chiquinha {
+    background-color: orange;
+    grid-area: chiquinha;
+}
+
+.marcelo {
+    background-color: orange;
+    grid-area: marcelo;
+}
+
+.trab {
+    background-color: white;
+    grid-area: trab;
+}
+
+.trab2 {
+    background-color: white;
+    grid-area: trab2;
+}
+
+.projeto1 {
+    background-color: green;
+    grid-area: projeto1;
+}
+
+.projeto2 {
+    background-color: green;
+    grid-area: projeto2;
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
 }
