@@ -1,42 +1,19 @@
 .container {
     display: grid;
-    background-color: purple;
+    background-color: white;
     gap: 10px;
-    text-align: center;
     grid-template-areas:
-
         'titulo titulo titulo titulo'
         'menu menu menu menu'
-        'chiquinha chiquinha marcelo marcelo'
-        'trab trab trab2 trab2'
-        'projeto1 projeto1 projeto2 projeto2'
-        'footer footer footer footer'
-    ;
+        'Giu Giu marcelo marcelo'
+        'tg tg tm tm'
+        'pg pg pm pm'
+        'fotos fotos fotos fotos'
+        'footer footer footer footer';
 }
 
-.menu ol {
-    list-style-type: none;
-    
-}
-
-.menu ol li {
-    margin-top: 7px;
-    padding-bottom: 3px;
-    border-bottom: 1px solid;
-}
-
-.menu {
-    grid-area: menu;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin: auto;
-    padding: auto;
-
-}
-
-.menu:hover ol li .um {
-    font-size: 50px;
+.fotos {
+    grid-area: fotos;
 }
 
 header {
@@ -44,67 +21,111 @@ header {
     justify-items: center;
     background-color: rgb(69, 69, 203);
     color: white;
+    text-align: left;
+    border: 1px solid rgb(69, 69, 203);;
+}
+
+.menu {
+
+    grid-area: menu;
+    justify-items: center;
+    border: 1px solid rgb(69, 69, 203);;
+}
+
+.menu ol {
+    display: flex;
+    list-style-type: none;
+    color: rgb(69, 69, 203);
+    background-color: white;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+ol li {
+    margin-left: 100px;
+
+}
+
+.menu ol li:hover {
+    font-size: 50px;
+
+}
+
+.Giu {
+    background-color: white;
+    grid-area: Giu;
+    text-align: left;
+    color: rgb(69, 69, 203);
+    border: 1px solid rgb(69, 69, 203);;
+    padding-left: 15px;
+}
+
+h4 {
     text-align: center;
-    margin: 0%;
-}
-
-.um {
-    background-color: green;
-    grid-area: um;
-}
-
-
-.dois {
-
-    background-color: green;
-    grid-area: dois;
-
-}
-
-.tres {
-
-    background-color: green;
-    grid-area: tres;
-
-}
-
-.quatro {
-
-    background-color: green;
-    grid-area: quatro;
-}
-
-.chiquinha {
-    background-color: orange;
-    grid-area: chiquinha;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .marcelo {
-    background-color: orange;
+    background-color: white;
+    text-align: left;
+    color: rgb(69, 69, 203);
     grid-area: marcelo;
+    border: 1px solid rgb(69, 69, 203);;
+    padding-left: 15px;
 }
 
-.trab {
+.tg {
     background-color: white;
-    grid-area: trab;
+    color: rgb(69, 69, 203);
+    grid-area: tg;
+    border: 1px solid rgb(69, 69, 203);;
+    padding-left: 15px;
 }
 
-.trab2 {
+.tm {
     background-color: white;
-    grid-area: trab2;
+    color: rgb(69, 69, 203);
+    grid-area: tm;
+    border: 1px solid rgb(69, 69, 203);;
+    padding-left: 15px;
 }
 
-.projeto1 {
-    background-color: green;
-    grid-area: projeto1;
+.pg {
+    background-color: white;
+    color: rgb(69, 69, 203);
+    grid-area: pg;
+    border: 1px solid rgb(69, 69, 203);;
+    padding-left: 15px;
 }
 
-.projeto2 {
-    background-color: green;
-    grid-area: projeto2;
+.pm {
+    background-color: white;
+    color: rgb(69, 69, 203);
+    grid-area: pm;
+    border: 1px solid rgb(69, 69, 203);;
+    padding-left: 15px;
+}
+
+.fm {
+    grid-area: fm;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(69, 69, 203);;
+}
+
+.fg {
+    grid-area: fg;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(69, 69, 203);;
 }
 
 footer {
-    background-color: red;
+    background-color: rgb(69, 69, 203);
+    color: white;
     grid-area: footer;
+    border: 1px solid rgb(69, 69, 203);;
+    text-align: center;
 }
