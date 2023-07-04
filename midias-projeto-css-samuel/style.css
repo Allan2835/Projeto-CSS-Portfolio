@@ -39,11 +39,15 @@ li a:hover{
 
 .item2{
     grid-area: item2;
+    
 }
 
 .item3{
     grid-area: item3;
     background: rgb(67, 47, 22);
+    height: 100px;
+    padding-top: 10%;
+    
 }
 
 header h1 {
@@ -81,22 +85,34 @@ header {
 .flex-main {
     display: flex;
     gap: 10px;
+    height: 500px;
 
 }
 
 .flex-section {
     display: flex;
     gap: 10px;
+    height: 500px;
+
+}
+
+.flex-section3 {
+    display: flex;
+    gap: 10px;
+    height: 500px;
 
 }
 
 .foto{
     grid-area: foto;
-
-    width: 100vw;
+    width: 100%;
 }
 
 .foto img{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
     width: 250px;
     height: 250px;
     border-radius: 100%;
@@ -104,7 +120,7 @@ header {
 
 
 footer {
-    height: 50px;
+    height: 300px;
     
 }
 
@@ -112,3 +128,62 @@ footer {
     color: white;
     text-align: center;
 }
+
+.textao1{
+    background-color: blue;
+    text-align: left;
+
+}
+
+.textao2{
+    background-color: rgb(166, 255, 0);
+    text-align: right;
+}
+.textao3{
+    background-color: rgb(74, 106, 201);
+    text-align: left;
+}
+
+#t1{
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 5%;
+    text-align: justify;
+}
+
+#t2{
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 5%;
+    text-align: justify;
+}
+#t3{
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 5%;
+    text-align: justify;
+}
+
+.video{
+    width:350px;
+    height:300px;
+    padding-right: 10%;
+   
+}
+
+.foto2 {
+    grid-area: foto2;
+    width: 100%;
+  
+}
+
+.foto2 img{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+}
+
