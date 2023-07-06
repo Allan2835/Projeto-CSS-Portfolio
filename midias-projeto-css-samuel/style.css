@@ -2,13 +2,12 @@
     margin:0;
     padding: 0;
     list-style: none;
+    background-color: rgba(29, 29, 89, 0.741);
     
 }
 
 .container-total{
-    background-color: black;
     display: grid;
-    gap: 10px;
     height: 100px;
     grid-template-areas: 
     'item1 item1 item1'
@@ -26,11 +25,11 @@ li a{
 
 li a:hover{
     text-decoration: none;
-    color: black;
+    color: rgb(21, 10, 56);
     font-size: 30px;
 }
 .item{
-    background-color: rgb(86, 71, 38);
+
 }
 
 .item1{
@@ -39,12 +38,12 @@ li a:hover{
 
 .item2{
     grid-area: item2;
+
     
 }
 
 .item3{
     grid-area: item3;
-    background: rgb(67, 47, 22);
     height: 100px;
     padding-top: 10%;
     
@@ -56,19 +55,24 @@ header h1 {
     color: aliceblue;
 }
 
+h1::first-letter {
+    color: rgb(124, 117, 117);
+    font-size: 150%;
+  }
+
+
 header {
-    background-color: dimgray;
+
     display: flex;
     justify-content: space-around;
 }
 
 .menus{
     display:flex;
-    gap: 30px;
     align-items: right;
     padding: 20px;
     text-decoration: none;
-    color: rgb(33, 171, 81);
+    color: rgb(207, 219, 211);
     font-family: sans-serif; 
 }
 
@@ -84,21 +88,18 @@ header {
 
 .flex-main {
     display: flex;
-    gap: 10px;
     height: 500px;
 
 }
 
 .flex-section {
     display: flex;
-    gap: 10px;
     height: 500px;
 
 }
 
 .flex-section3 {
     display: flex;
-    gap: 10px;
     height: 500px;
 
 }
@@ -106,74 +107,89 @@ header {
 .foto{
     grid-area: foto;
     width: 100%;
+     padding-top: 100px; 
+    padding-left: 8%;
 }
 
 .foto img{
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
+    border-radius: 50%;
+    /* padding-top: 100px; */
+    /* padding-left: 10%; */
+    /* padding-bottom: 100%; */
+    /* padding-right: 50%; */
+    
+    width: 300px;
+    height: 300px;
+    /* border-radius: 0%; */
+    
 }
 
 
 footer {
     height: 300px;
-    
+   
 }
 
 #contato {
     color: white;
     text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
 }
 
 .textao1{
-    background-color: blue;
     text-align: left;
 
 }
 
 .textao2{
-    background-color: rgb(166, 255, 0);
     text-align: right;
 }
 .textao3{
-    background-color: rgb(74, 106, 201);
     text-align: left;
 }
 
 #t1{
-    padding-top: 5%;
+    padding-top: 15%;
     padding-left: 1%;
     padding-right: 5%;
     text-align: justify;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
 }
-
 #t2{
-    padding-top: 5%;
+    padding-top: 15%;
     padding-left: 3%;
     padding-right: 5%;
     text-align: justify;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+
 }
 #t3{
-    padding-top: 5%;
+    padding-top: 15%;
     padding-left: 1%;
     padding-right: 5%;
     text-align: justify;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
 }
 
 .video{
     width:350px;
     height:300px;
+    padding-top: 3%;
     padding-right: 10%;
+    padding-left:5%;
    
 }
 
 .foto2 {
     grid-area: foto2;
     width: 100%;
+    padding-top: 5%;
+    padding-right: 3%;
+    padding-left:2%;
   
 }
 
@@ -187,3 +203,68 @@ footer {
     border-radius: 25%;
 }
 
+
+@media only screen and (max-width: 768px) { 
+    *{
+        margin:0;
+        padding: 0;
+        list-style: none;
+        background-color: rgb(102, 69, 201);
+        
+    }
+
+    .container-total{
+        display: grid;
+        height: 100px;
+        grid-template-areas: 
+        'item1 item1'
+        'item2 item2'
+        'item3 item3'; 
+    }
+   
+    .flex-main {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    
+    }
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .menus{
+        display:flex;
+        align-items: right;  
+        flex-direction: column;
+        padding: 20px;
+        text-decoration: none;
+        color: rgb(207, 219, 211);
+        font-family: sans-serif; 
+    }
+
+
+    .flex-section {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    
+    }
+    
+    .flex-section3 {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    
+    }
+
+
+
+
+
+
+
+}
