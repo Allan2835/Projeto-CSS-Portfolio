@@ -1,110 +1,286 @@
-.container {
-    display: grid;
-    background-color: purple;
-    gap: 10px;
-    text-align: center;
-    grid-template-areas:
+@media only screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        background-color: white;
+        gap: 10px;
+        grid-template-areas:
+            'titulo titulo titulo titulo'
+            'menu menu menu menu'
+            'Giu Giu marcelo marcelo'
+            'tg tg tm tm'
+            'pg pg pm pm'
+            'fotos fotos fotos fotos'
+            'footer footer footer footer';
+    }
 
-        'titulo titulo titulo titulo'
-        'menu menu menu menu'
-        'chiquinha chiquinha marcelo marcelo'
-        'trab trab trab2 trab2'
-        'projeto1 projeto1 projeto2 projeto2'
-        'footer footer footer footer'
-    ;
-}
 
-.menu ol {
-    list-style-type: none;
+    .fotos {
+        display: flex;
+      
+        grid-area: fotos;
+    justify-content: space-evenly;
+        
+    }
+
+    header {
+        grid-area: titulo;
+        justify-items: center;
+        background-color: rgb(69, 69, 203);
+        color: white;
+        text-align: left;
+        border: 1px solid rgb(69, 69, 203);
+    }
+
+    h1::first-line {
+        color: pink
+    }
+
+    .menu {
+
+        grid-area: menu;
+        justify-items: center;
+        border: 1px solid rgb(69, 69, 203);
+    }
+
+    .menu ol {
+        display: flex;
+        list-style-type: none;
+        color: rgb(69, 69, 203);
+        background-color: white;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+
+    ol li {
+        margin-left: 100px;
+
+    }
+
+    .menu ol li:hover {
+        font-size: 50px;
+
+    }
+
+    .Giu {
+        background-color: white;
+        grid-area: Giu;
+        text-align: left;
+        color: rgb(69, 69, 203);
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    h4 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .marcelo {
+        background-color: white;
+        text-align: left;
+        color: rgb(69, 69, 203);
+        grid-area: marcelo;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .tg {
+        background-color: white;
+        color: rgb(69, 69, 203);
+        grid-area: tg;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .tm {
+        background-color: white;
+        color: rgb(69, 69, 203);
+        grid-area: tm;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .pg {
+        background-color: white;
+        color: rgb(69, 69, 203);
+        grid-area: pg;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .pm {
+        background-color: white;
+        color: rgb(69, 69, 203);
+        grid-area: pm;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .fm {
+        grid-area: fm;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid rgb(69, 69, 203);
     
-}
+        
+    }
 
-.menu ol li {
-    margin-top: 7px;
-    padding-bottom: 3px;
-    border-bottom: 1px solid;
-}
+    .fg {
+        grid-area: fg;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid rgb(69, 69, 203);
+        
+    }
 
-.menu {
-    grid-area: menu;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin: auto;
-    padding: auto;
-
-}
-
-.menu:hover ol li .um {
-    font-size: 50px;
-}
-
-header {
-    grid-area: titulo;
-    justify-items: center;
-    background-color: rgb(69, 69, 203);
-    color: white;
-    text-align: center;
-    margin: 0%;
-}
-
-.um {
-    background-color: green;
-    grid-area: um;
+    footer {
+        background-color: rgb(69, 69, 203);
+        color: white;
+        grid-area: footer;
+        border: 1px solid rgb(69, 69, 203);
+        text-align: center;
+    }
 }
 
 
-.dois {
 
-    background-color: green;
-    grid-area: dois;
+@media only screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        background-color: white;
+        gap: 10px;
+        grid-template-areas:
+            'titulo titulo'
+            'menu menu'
+            'Giu marcelo'
+            'tg tm'
+            'pg pm'
+            'fotos fotos'
+            'footer footer';
+    }
 
-}
 
-.tres {
+    .fotos {
+        grid-area: fotos;
+    }
 
-    background-color: green;
-    grid-area: tres;
+    header {
+        grid-area: titulo;
+        justify-items: center;
+        background-color: rgb(69, 69, 203);
+        color: white;
+        text-align: left;
+        border: 1px solid rgb(69, 69, 203);
+    }
 
-}
+    h1::first-line {
+        color: pink
+    }
 
-.quatro {
+    .menu {
+        grid-area: menu;
+        justify-items: center;
+        border: 1px solid rgb(69, 69, 203);
+    }
 
-    background-color: green;
-    grid-area: quatro;
-}
+    .menu ol {
+        display: flex;
+        list-style-type: none;
+        color: rgb(69, 69, 203);
+        background-color: white;
+        list-style-type: none;
+        justify-content: space-around;
+    }
 
-.chiquinha {
-    background-color: orange;
-    grid-area: chiquinha;
-}
+    ol li {
+        margin-left: 25px;
 
-.marcelo {
-    background-color: orange;
-    grid-area: marcelo;
-}
+    }
 
-.trab {
-    background-color: white;
-    grid-area: trab;
-}
+    .menu ol li:hover {
+        font-size: 25px;
 
-.trab2 {
-    background-color: white;
-    grid-area: trab2;
-}
+    }
 
-.projeto1 {
-    background-color: green;
-    grid-area: projeto1;
-}
+    .Giu {
+        background-color: white;
+        grid-area: Giu;
+        text-align: left;
+        color: rgb(69, 69, 203);
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
 
-.projeto2 {
-    background-color: green;
-    grid-area: projeto2;
-}
+    h4 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
-footer {
-    background-color: red;
-    grid-area: footer;
+    .marcelo {
+        background-color: white;
+        text-align: left;
+        color: rgb(69, 69, 203);
+        grid-area: marcelo;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .tg {
+        background-color: white;
+        color: rgb(69, 69, 203);
+        grid-area: tg;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .tm {
+        background-color: white;
+        color: rgb(69, 69, 203);
+        grid-area: tm;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .pg {
+        background-color: white;
+        color: rgb(69, 69, 203);
+        grid-area: pg;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .pm {
+        background-color: white;
+        color: rgb(69, 69, 203);
+        grid-area: pm;
+        border: 1px solid rgb(69, 69, 203);
+        padding-left: 15px;
+    }
+
+    .fm {
+        grid-area: fm;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid rgb(69, 69, 203);
+    }
+
+    .fg {
+        grid-area: fg;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid rgb(69, 69, 203);
+
+    }
+
+    footer {
+        background-color: rgb(69, 69, 203);
+        color: white;
+        grid-area: footer;
+        border: 1px solid rgb(69, 69, 203);
+        text-align: center;
+    }
 }
