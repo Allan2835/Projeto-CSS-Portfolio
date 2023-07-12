@@ -1,0 +1,158 @@
+html, body {
+  margin:10px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Animação do background */
+#background {
+  width: 98vw;
+  height: 400vh;
+  background: linear-gradient(45deg, #08d9d6, #252a34, #813548, #c937b0);
+  background-size: 300% 300%;
+  animation: colors 8s ease infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+ /*Fim animação background */
+
+ /* --- Foto de perfil --- */
+img {
+  position:relative;
+  margin-top:50px;
+  left: 40%;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, .35) 5px 5px 15px 10px;
+  cursor:pointer;
+  transition: all .6s ease-in-out;
+}
+
+img:hover, img:focus {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ----menu-----*/
+header {
+  background-color: #000000;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header h1 {
+  color: red;
+  font-size: 40px;
+}
+
+header span {
+  color: white;
+  font-size: 40px;
+}
+
+nav .navegacao-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navegacao-menu:hover {
+  transform: scale(1.2);
+}
+
+.navegacao-menu li a {
+  padding: 30px;
+  color: white;
+  font-size: 25px;
+}
+
+/*--- main ---*/
+main h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 3rem;
+  color: white;
+  border: 4px solid white;
+  padding: 2rem 4rem;
+}
+
+section {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+#Sobre {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  width: 50vw;
+  background-color: #494848;
+  padding: 20px;
+  border-radius: 15px;
+  opacity: 0.7;
+}
+
+section:hover {
+  opacity: 1.0;
+  background-color: #383838;
+}
+
+section h2 {
+  margin-top: 1px;
+  color:#08d9d6
+}
+#sobre span {
+  color: rgb(219, 8, 8);
+}
+ 
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*--- Botão fixo para voltar ao inicio---*/
+.botao-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 25%;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #1b1b1b;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, .35) 3px 4px 3px;
+}
+.botao-inicio::after {
+  content: "↑";
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(139, 142, 145);
+  transition: 250ms;
+}
+.botao-inicio:hover::after {
+  margin-top:10px;
+}
