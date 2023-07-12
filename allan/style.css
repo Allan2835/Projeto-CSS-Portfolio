@@ -125,6 +125,7 @@ section h2 {
   color: rgb(219, 8, 8);
 }
  
+/*--- grid ---*/
 @media screen and (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
