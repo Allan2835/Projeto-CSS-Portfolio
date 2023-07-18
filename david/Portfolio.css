@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo';
+    color: #1C1C1C;
+}
+
+/* header */
+.header-container {
+    display: grid;
+    background-color: #84CCD6;
+    background-image: url(/david/Media/Design\ sem\ nome\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 110px 110px;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.social-media {
+    display: flex;
+}
+
+.menu a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.social-media a {
+    text-decoration: none;
+    color: #1C1C1C;
+    padding: 15px 60px;
+    border: 1px solid #1C1C1C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+
+}
+
+/* menu-items */
+nav a {
+    color: #303030;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav a::after {
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: #af68ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 80%;
+    text-decoration: none;
+}
+
+/* cards */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
+.card-container {
+    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card-1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #84CCD6;
+    background-image: url(/david/Media/David.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.1);
+    color: #ffffff;
+
+}
+
+.card-2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #84CCD6;
+    background-image: url(/david/Media/Nicolas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.1);
+    color: #ffffff;
+}
+
+.text {
+    width: 40%;
+    letter-spacing: 1px;
+    color: rgb (109, 109, 109);
+}
+
+h3 {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1C1C1C;
+    padding: 80px 0 0;
+}
+
+.footer-text {
+    font-size: 20px;
+    color: #1C1C1C;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px 50px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #84CCD6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1C1C1C;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-container {
+        display: start;
+        height: 60vh;
+    }
+
+    h1 {
+        font-size: 30px;
+
+    }
+
+    h2 {
+        font-size: 25px;
+
+    }
+
+    .social-media {
+        display: start;
+    }
+
+    .social-media a {
+        padding: 10px 40px;
+
+    }
+
+    h3 {
+        font-size: 30px;
+        padding: 30px 0 0;
+    }
+
+    .card-container {
+        padding: 30px 0 0;
+        width: 90%;
+    }
+}
